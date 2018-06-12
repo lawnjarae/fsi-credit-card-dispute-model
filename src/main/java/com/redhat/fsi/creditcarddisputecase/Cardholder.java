@@ -15,7 +15,6 @@ public class Cardholder implements java.io.Serializable {
 
 	private java.lang.Float balanceRatio;
 
-	@org.kie.api.definition.type.Label(value = "Risk Rating")
 	private java.lang.Integer riskRating;
 
 	public Cardholder() {
