@@ -17,7 +17,6 @@ public class FraudData implements java.io.Serializable {
 
 	private java.lang.String customerStatus;
 
-	@org.kie.api.definition.type.Label(value = "Dispute Risk Rating")
 	private java.lang.Integer disputeRiskRating;
 
 	public FraudData() {
