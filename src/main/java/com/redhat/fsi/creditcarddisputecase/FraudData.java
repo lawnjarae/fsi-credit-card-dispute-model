@@ -17,6 +17,9 @@ public class FraudData implements java.io.Serializable {
 
 	private java.lang.String customerStatus;
 
+	@org.kie.api.definition.type.Label(value = "Dispute Risk Rating")
+	private java.lang.Integer disputeRiskRating;
+
 	public FraudData() {
 	}
 
@@ -36,13 +39,9 @@ public class FraudData implements java.io.Serializable {
 		this.maxDaysElapsed = maxDaysElapsed;
 	}
 
-	public FraudData(
-			java.lang.Float totalFraudAmount,
-			java.lang.Integer lineItemCount,
-			java.lang.Integer maxDaysElapsed,
-			boolean automated,
-			java.lang.String customerStatus
-			) {
+	public FraudData(java.lang.Float totalFraudAmount,
+			java.lang.Integer lineItemCount, java.lang.Integer maxDaysElapsed,
+			boolean automated, java.lang.String customerStatus) {
 		this.totalFraudAmount = totalFraudAmount;
 		this.lineItemCount = lineItemCount;
 		this.maxDaysElapsed = maxDaysElapsed;
@@ -74,14 +73,24 @@ public class FraudData implements java.io.Serializable {
 		this.customerStatus = customerStatus;
 	}
 
+	public java.lang.Integer getDisputeRiskRating() {
+		return this.disputeRiskRating;
+	}
+
+	public void setDisputeRiskRating(java.lang.Integer disputeRiskRating) {
+		this.disputeRiskRating = disputeRiskRating;
+	}
+
 	public FraudData(java.lang.Integer lineItemCount,
 			java.lang.Integer maxDaysElapsed, java.lang.Float totalFraudAmount,
-			boolean automated, java.lang.String customerStatus) {
+			boolean automated, java.lang.String customerStatus,
+			java.lang.Integer disputeRiskRating) {
 		this.lineItemCount = lineItemCount;
 		this.maxDaysElapsed = maxDaysElapsed;
 		this.totalFraudAmount = totalFraudAmount;
 		this.automated = automated;
 		this.customerStatus = customerStatus;
+		this.disputeRiskRating = disputeRiskRating;
 	}
 
 }
