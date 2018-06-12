@@ -15,11 +15,8 @@ public class Cardholder implements java.io.Serializable {
 
 	private java.lang.Float balanceRatio;
 
-	@org.kie.api.definition.type.Label(value = "Card Holder Risk Rating")
-	private java.lang.Integer cardHolderRiskRating;
-
-	@org.kie.api.definition.type.Label(value = "Dispute Risk Rating")
-	private java.lang.Integer disputeRiskRating;
+	@org.kie.api.definition.type.Label(value = "Risk Rating")
+	private java.lang.Integer riskRating;
 
 	public Cardholder() {
 	}
@@ -64,34 +61,23 @@ public class Cardholder implements java.io.Serializable {
 		this.balanceRatio = balanceRatio;
 	}
 
-	public java.lang.Integer getCardHolderRiskRating() {
-		return this.cardHolderRiskRating;
+	public java.lang.Integer getRiskRating() {
+		return this.riskRating;
 	}
 
-	public void setCardHolderRiskRating(java.lang.Integer cardHolderRiskRating) {
-		this.cardHolderRiskRating = cardHolderRiskRating;
-	}
-
-	public java.lang.Integer getDisputeRiskRating() {
-		return this.disputeRiskRating;
-	}
-
-	public void setDisputeRiskRating(java.lang.Integer disputeRiskRating) {
-		this.disputeRiskRating = disputeRiskRating;
+	public void setRiskRating(java.lang.Integer riskRating) {
+		this.riskRating = riskRating;
 	}
 
 	public Cardholder(java.lang.String stateCode, java.lang.Integer age,
 			java.lang.String status, java.lang.Integer incidentCount,
-			java.lang.Float balanceRatio,
-			java.lang.Integer cardHolderRiskRating,
-			java.lang.Integer disputeRiskRating) {
+			java.lang.Float balanceRatio, java.lang.Integer riskRating) {
 		this.stateCode = stateCode;
 		this.age = age;
 		this.status = status;
 		this.incidentCount = incidentCount;
 		this.balanceRatio = balanceRatio;
-		this.cardHolderRiskRating = cardHolderRiskRating;
-		this.disputeRiskRating = disputeRiskRating;
+		this.riskRating = riskRating;
 	}
 
 }
