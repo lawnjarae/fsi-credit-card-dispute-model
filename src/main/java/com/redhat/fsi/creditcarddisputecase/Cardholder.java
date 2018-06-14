@@ -79,4 +79,10 @@ public class Cardholder implements java.io.Serializable {
 		this.riskRating = riskRating;
 	}
 
+	@Override
+	public String toString() {
+		return "Cardholder [stateCode=" + stateCode + ", age=" + age + ", status=" + status + ", incidentCount="
+				+ incidentCount + ", balanceRatio=" + balanceRatio + ", riskRating=" + riskRating + "]";
+	}
+
 }

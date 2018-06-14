@@ -92,4 +92,11 @@ public class FraudData implements java.io.Serializable {
 		this.disputeRiskRating = disputeRiskRating;
 	}
 
+	@Override
+	public String toString() {
+		return "FraudData [lineItemCount=" + lineItemCount + ", maxDaysElapsed=" + maxDaysElapsed
+				+ ", totalFraudAmount=" + totalFraudAmount + ", automated=" + automated + ", customerStatus="
+				+ customerStatus + ", disputeRiskRating=" + disputeRiskRating + "]";
+	}
+
 }
